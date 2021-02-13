@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Code.Scripts.ControlElements;
 
 namespace Code.Scripts.GeneralCharactersScripts
 {
@@ -16,9 +17,11 @@ namespace Code.Scripts.GeneralCharactersScripts
         private Animator _animator;
         private Rigidbody2D _rigidbody;
         private Vector2 _movement;
+        private Joystick _joystick;
 
         private void Awake()
         {
+            _joystick = FindObjectOfType<Joystick>();
             _canMove = true;
             _animator = GetComponent<Animator>();
             _rigidbody = GetComponent<Rigidbody2D>();
@@ -32,10 +35,9 @@ namespace Code.Scripts.GeneralCharactersScripts
 
         private void Movement()
         {
-            _movement.x = Input.GetAxis("Horizontal");
-            _movement.y = Input.GetAxis("Vertical");
-            _movement = Vector2.ClampMagnitude(_movement, 1f);
-                
+            _movement = _joystick.Direction;
+            _movement /= 200;
+            
             _animator.SetFloat("Horizontal", _movement.x);
             _animator.SetFloat("Vertical", _movement.y);
 
