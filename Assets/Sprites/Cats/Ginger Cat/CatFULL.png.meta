@@ -1,31 +1,40 @@
 fileFormatVersion: 2
-guid: d6f137849b7058a4198ed4e281b9ba82
+guid: 52269d8cbd91f1b429f45119bfe2527d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3766795228077908477
-    second: MainCharFromCamera_0
+      213: -3253417820358051466
+    second: CatFULL_0
   - first:
-      213: -5713508232475121531
-    second: MainCharFromCamera_1
+      213: 2594630212269291450
+    second: CatFULL_1
   - first:
-      213: 6772246006526847770
-    second: MainCharFromCamera_2
+      213: -198160685427424295
+    second: CatFULL_2
   - first:
-      213: -8258080708162432659
-    second: MainCharFromCamera_3
+      213: 1972548651784731511
+    second: CatFULL_3
   - first:
-      213: 6305358992469597814
-    second: MainCharFromCamera_4
+      213: -6465475088637900176
+    second: CatFULL_4
   - first:
-      213: 632464105571992522
-    second: MainCharFromCamera_5
+      213: 1376149300197399470
+    second: CatFULL_5
   - first:
-      213: 304465496904996708
-    second: MainCharFromCamera_6
+      213: 2062714772513100391
+    second: CatFULL_6
   - first:
-      213: 6969361060349929769
-    second: MainCharFromCamera_7
+      213: 303449232249136133
+    second: CatFULL_7
+  - first:
+      213: 2881830227364023385
+    second: CatFULL_8
+  - first:
+      213: 2098610141577251068
+    second: CatFULL_9
+  - first:
+      213: -2714515004636572684
+    second: CatFULL_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainCharFromCamera_0
+      name: CatFULL_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 3
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df168377d48564430800000000000000
-      internalID: 3766795228077908477
+      spriteID: 679f1afcab989d2d0800000000000000
+      internalID: -3253417820358051466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharFromCamera_1
+      name: CatFULL_1
       rect:
         serializedVersion: 2
-        x: 46
+        x: 49
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 588ec06b88a85b0b0800000000000000
-      internalID: -5713508232475121531
+      spriteID: ab7becd5e6af10420800000000000000
+      internalID: 2594630212269291450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharFromCamera_2
+      name: CatFULL_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 95
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1b279eacd9dbfd50800000000000000
-      internalID: 6772246006526847770
+      spriteID: 9d386a018edff3df0800000000000000
+      internalID: -198160685427424295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharFromCamera_3
+      name: CatFULL_3
       rect:
         serializedVersion: 2
-        x: 126
+        x: 141
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d61d87f5957656d80800000000000000
-      internalID: -8258080708162432659
+      spriteID: 77bfdcb3c86ef5b10800000000000000
+      internalID: 1972548651784731511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharFromCamera_4
+      name: CatFULL_4
       rect:
         serializedVersion: 2
-        x: 166
+        x: 187
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67e177fa892218750800000000000000
-      internalID: 6305358992469597814
+      spriteID: 07ac99599a40646a0800000000000000
+      internalID: -6465475088637900176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharFromCamera_5
+      name: CatFULL_5
       rect:
         serializedVersion: 2
-        x: 206
+        x: 233
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac3cdc9c0c6f6c800800000000000000
-      internalID: 632464105571992522
+      spriteID: eab1b245f70191310800000000000000
+      internalID: 1376149300197399470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharFromCamera_6
+      name: CatFULL_6
       rect:
         serializedVersion: 2
-        x: 246
+        x: 279
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467926d91cda93400800000000000000
-      internalID: 304465496904996708
+      spriteID: 7621898282c30ac10800000000000000
+      internalID: 2062714772513100391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharFromCamera_7
+      name: CatFULL_7
       rect:
         serializedVersion: 2
-        x: 286
+        x: 325
         y: 6
-        width: 28
-        height: 80
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,8 +305,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929e89985f428b060800000000000000
-      internalID: 6969361060349929769
+      spriteID: 504239f0871163400800000000000000
+      internalID: 303449232249136133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatFULL_8
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 6
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c040db2515ef720800000000000000
+      internalID: 2881830227364023385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatFULL_9
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 6
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf88eba0ec2cf1d10800000000000000
+      internalID: 2098610141577251068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatFULL_10
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 6
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f35b234cfa145ad0800000000000000
+      internalID: -2714515004636572684
       vertices: []
       indices: 
       edges: []
