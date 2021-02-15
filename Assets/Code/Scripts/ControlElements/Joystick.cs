@@ -12,6 +12,8 @@ namespace Code.Scripts.ControlElements
         [SerializeField] private RectTransform ridger;
         
         private Camera _mainCamera;
+        private Vector2 _originPlainPosition;
+        private Vector2 _originRidgerPosition;
         private Vector2 _firstTouchPosition;
         private Vector2 _secondTouchPosition;
         private Vector2 _touchOffset;
@@ -22,8 +24,10 @@ namespace Code.Scripts.ControlElements
 
         private void Awake()
         {
-            joystickUI.SetActive(false);
+            joystickUI.SetActive(true);
             _mainCamera = Camera.main;
+            _originPlainPosition = plain.position;
+            _originRidgerPosition = ridger.position;
         }
 
         private void Update()
@@ -37,7 +41,7 @@ namespace Code.Scripts.ControlElements
                     _secondTouchPosition = Input.GetTouch(0).position;
                     plain.position = _firstTouchPosition;
                     ridger.position = _firstTouchPosition;
-                    joystickUI.SetActive(true);
+                    //joystickUI.SetActive(true);
                 }
                 
                 if (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary)
@@ -53,7 +57,9 @@ namespace Code.Scripts.ControlElements
                     _firstTouchPosition = Vector2.zero;
                     _secondTouchPosition = Vector2.zero;
                     _touchDirection = Vector2.zero;
-                    joystickUI.SetActive(false);
+                    plain.position = _originPlainPosition;
+                    ridger.position = _originRidgerPosition;
+                    //joystickUI.SetActive(false);
                 }
             }
         }
