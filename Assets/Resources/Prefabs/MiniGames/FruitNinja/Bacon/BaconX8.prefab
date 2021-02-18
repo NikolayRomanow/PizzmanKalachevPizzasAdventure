@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8590900241782862502}
   - component: {fileID: 8590900241782862503}
   m_Layer: 0
-  m_Name: YellowPepperX8
+  m_Name: BaconX8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.625, y: 0.9375}
+  m_Size: {x: 0.3125, y: 0.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

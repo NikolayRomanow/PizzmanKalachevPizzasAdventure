@@ -14,17 +14,47 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
     {
         [SerializeField] private List<GameObject> fruits;
         [SerializeField] private CannonPosition cannonPosition;
-        [SerializeField] private List<float> timersForCannon;
-        private void Start()
+        private Coroutine _coroutine;
+        private bool _isFirstShot;
+        public bool IsFirstShot
         {
-            StartCoroutine(TurnOnFruit());
+            set => _isFirstShot = value;
         }
 
+        private void Awake()
+        {
+            _isFirstShot = false;
+        }
+
+        private void Start()
+        {
+            TimeManager.StartCannon.AddListener(StartCannon);
+            TimeManager.StopCannon.AddListener(StopCannon);
+        }
+
+        private void StartCannon()
+        {
+            _coroutine =  StartCoroutine(TurnOnFruit());
+            Debug.Log("Cannon started");
+        }
+
+        private void StopCannon()
+        {
+            StopCoroutine(_coroutine);
+            Debug.Log("Cannon stopped");
+        }
+        
         IEnumerator TurnOnFruit()
         {
             while (true)
             {
-                yield return new WaitForSeconds(Random.Range(4f, 6f));
+                if (_isFirstShot)
+                {
+                    yield return new WaitForSeconds(0f);
+                    _isFirstShot = false;
+                }
+                else 
+                    yield return new WaitForSeconds(Random.Range(2f, 6f));
                 GameObject turnedFruit = Instantiate(fruits[Random.Range(0, fruits.Count)], transform.position, Quaternion.identity);
                 Rigidbody2D rigidbody2D = turnedFruit.GetComponent<Rigidbody2D>();
                 switch (cannonPosition)

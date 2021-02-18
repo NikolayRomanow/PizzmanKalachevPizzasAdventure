@@ -10,7 +10,7 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
     [RequireComponent(typeof(CircleCollider2D))]
     public class Fruit : MonoBehaviour
     {
-        [SerializeField] private GameObject croppedPrefab;
+        [SerializeField] protected GameObject croppedPrefab;
         private CircleCollider2D _circleCollider2D;
         private bool _rightRotation;
         private Vector3 _rotateDirection;
@@ -31,12 +31,12 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
             Destroy(gameObject, 2f);
         }
 
-        private void Update()
+        protected virtual void Update()
         {
             transform.Rotate(_rotateDirection);
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        protected virtual void OnTriggerEnter2D(Collider2D other)
         {
             if (other.GetComponent<Blade>() && croppedPrefab != null)
             {
