@@ -134,5 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5585f0d27abacb4c917ea407ae2143d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  croppedPrefab: {fileID: 8590900241782862500, guid: bd1a51e27520ba14c9be7f9fa935260a,
+  croppedPrefabOne: {fileID: 8590900241782862500, guid: bd1a51e27520ba14c9be7f9fa935260a,
+    type: 3}
+  croppedPrefabTwo: {fileID: 8590900241782862500, guid: 9b5d203b8fe639043a970cac0b61cc6e,
     type: 3}

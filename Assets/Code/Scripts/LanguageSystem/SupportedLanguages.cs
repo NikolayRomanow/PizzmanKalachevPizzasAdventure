@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,9 +9,15 @@ namespace Code.Scripts.LanguageSystem
     {
         Russian, English
     }
-    
+
     public class SupportedLanguages : MonoBehaviour
     {
-        public static OpinionsLanguages ValidLanguage;
+        [SerializeField] private OpinionsLanguages validLanguage;
+
+        public OpinionsLanguages ValidLanguage
+        {
+            get => validLanguage;
+            set => validLanguage = value;
+        }
     }
 }

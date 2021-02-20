@@ -10,7 +10,7 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
     [RequireComponent(typeof(CircleCollider2D))]
     public class Fruit : MonoBehaviour
     {
-        [SerializeField] protected GameObject croppedPrefab;
+        [SerializeField] protected GameObject croppedPrefabOne, croppedPrefabTwo;
         private CircleCollider2D _circleCollider2D;
         private bool _rightRotation;
         private Vector3 _rotateDirection;
@@ -38,12 +38,12 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.GetComponent<Blade>() && croppedPrefab != null)
+            if (other.GetComponent<Blade>() && croppedPrefabOne != null)
             {
-                if (!croppedPrefab.activeSelf)
+                if (!croppedPrefabOne.activeSelf)
                     return;
-                Instantiate(croppedPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 1)* 100, ForceMode2D.Force);
-                Instantiate(croppedPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>().AddForce(new Vector2(1, 1)* 100, ForceMode2D.Force);
+                Instantiate(croppedPrefabOne, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 1)* 100, ForceMode2D.Force);
+                Instantiate(croppedPrefabTwo, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>().AddForce(new Vector2(1, 1)* 100, ForceMode2D.Force);
                 Destroy(gameObject);
             }
         }

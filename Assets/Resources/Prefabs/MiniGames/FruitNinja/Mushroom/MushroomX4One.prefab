@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8590900241782862502}
   - component: {fileID: 8590900241782862503}
   m_Layer: 0
-  m_Name: YellowPepperX8
+  m_Name: MushroomX4One
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,13 +73,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7238345598928273307, guid: 8f2a40f3a773db941a323c0955a550a7,
+  m_Sprite: {fileID: -4596230732992929682, guid: 8f2a40f3a773db941a323c0955a550a7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.3125, y: 0.3125}
+  m_Size: {x: 0.171875, y: 0.171875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,4 +134,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5585f0d27abacb4c917ea407ae2143d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  croppedPrefab: {fileID: 0}
+  croppedPrefabOne: {fileID: 0}
+  croppedPrefabTwo: {fileID: 0}

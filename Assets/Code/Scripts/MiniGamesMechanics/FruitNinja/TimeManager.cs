@@ -14,6 +14,7 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         [SerializeField] private TextMeshProUGUI timeOnScreen;
         [SerializeField] private int leftSeconds;
         [SerializeField] private List<FruitCannon> cannons;
+        [SerializeField] private SupportedLanguages supportedLanguages;
         private TimeSpan _leftTime;
 
         public static UnityEvent StartCannon;
@@ -23,6 +24,7 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         {
             StartCannon = new UnityEvent();
             StopCannon = new UnityEvent();
+            supportedLanguages = FindObjectOfType<SupportedLanguages>();
             _leftTime = TimeSpan.FromSeconds(leftSeconds);
         }
 
@@ -34,7 +36,7 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         private string CheckValidLanguage()
         {
             string phraze = String.Empty;
-            switch (SupportedLanguages.ValidLanguage)
+            switch (supportedLanguages.ValidLanguage)
             {
                 case OpinionsLanguages.Russian:
                     phraze = "Время: ";

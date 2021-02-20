@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8590900241782862502}
   - component: {fileID: 8590900241782862503}
   m_Layer: 0
-  m_Name: YellowPepperX2
+  m_Name: PepperX2Two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,13 +73,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9028938477123893177, guid: 8f2a40f3a773db941a323c0955a550a7,
+  m_Sprite: {fileID: 5148616327105364085, guid: 8f2a40f3a773db941a323c0955a550a7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.328125, y: 0.3125}
+  m_Size: {x: 0.34375, y: 0.421875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,5 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5585f0d27abacb4c917ea407ae2143d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  croppedPrefab: {fileID: 8590900241782862500, guid: 9b5d203b8fe639043a970cac0b61cc6e,
+  croppedPrefabOne: {fileID: 8590900241782862500, guid: 1c43326ca349082428416b1a2a2dd234,
+    type: 3}
+  croppedPrefabTwo: {fileID: 8590900241782862500, guid: 1c43326ca349082428416b1a2a2dd234,
     type: 3}

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PizzeriaScene.unity
+    guid: 28a154b57b66dfd4992ce0c16a5158ed
+  - enabled: 1
     path: Assets/Scenes/FruitNinjaScene.unity
     guid: f6fc747c10deb504fa8fc3e1ccba6aa9
   m_configObjects: {}

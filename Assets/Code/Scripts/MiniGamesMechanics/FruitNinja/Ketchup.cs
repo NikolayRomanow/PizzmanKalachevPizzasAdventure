@@ -17,11 +17,11 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
 
         protected override void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.GetComponent<Blade>() && croppedPrefab != null)
+            if (other.GetComponent<Blade>() && croppedPrefabOne != null)
             {
-                if (!croppedPrefab.activeSelf)
+                if (!croppedPrefabOne.activeSelf)
                     return;
-                Instantiate(croppedPrefab, transform.position, Quaternion.identity);
+                Instantiate(croppedPrefabOne, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
         }
