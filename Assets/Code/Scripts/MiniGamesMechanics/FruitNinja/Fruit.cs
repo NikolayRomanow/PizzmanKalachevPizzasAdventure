@@ -13,9 +13,15 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         [SerializeField] protected GameObject croppedPrefabOne, croppedPrefabTwo;
         private CircleCollider2D _circleCollider2D;
         private bool _rightRotation;
+        private bool _hasCroppedPrefab = false;
+
+        public bool HasCroppedPrefab => _hasCroppedPrefab;
+
         private Vector3 _rotateDirection;
         private void Awake()
         {
+            if (croppedPrefabOne)
+                _hasCroppedPrefab = true;
             _circleCollider2D = GetComponent<CircleCollider2D>();
             _circleCollider2D.enabled = false;
             _rightRotation = (Random.Range(0f, 1f) > 0.5f);

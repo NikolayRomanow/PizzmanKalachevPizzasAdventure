@@ -15,7 +15,10 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         [SerializeField] private int leftSeconds;
         [SerializeField] private List<FruitCannon> cannons;
         [SerializeField] private SupportedLanguages supportedLanguages;
+        [SerializeField] private AudioSource audioGuitar, audioClock;
         private TimeSpan _leftTime;
+
+        private Coroutine _clockCoroutine, _guitarCoroutine;
 
         public static UnityEvent StartCannon;
         public static UnityEvent StopCannon;
@@ -30,7 +33,10 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
 
         private void Start()
         {
+            StartCannon.AddListener(OnClockTemped);
             StartCoroutine(StartTypingTimeOnScreen());
+            audioClock.Play();
+            _clockCoroutine = StartCoroutine(TurnDownClock());
         }
 
         private string CheckValidLanguage()
@@ -47,6 +53,14 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
                     break;
             }
             return phraze;
+        }
+
+        private void OnClockTemped()
+        {
+            StopCoroutine(_clockCoroutine);
+            audioClock.Stop();
+            audioGuitar.Play();
+            StartCoroutine(TurnUpGuitar());
         }
 
         IEnumerator StartTypingTimeOnScreen()
@@ -73,6 +87,25 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
                 timeOnScreen.text = phraze + _leftTime.ToString(@"mm\:ss");
             }
             StopCannon.Invoke();
+        }
+
+        IEnumerator TurnDownClock()
+        {
+            yield return new WaitForSeconds(0.5f);
+            while (audioClock.volume > 0)
+            {
+                yield return new WaitForSeconds(0.4f);
+                audioClock.volume -= 0.15f;
+            }
+        }
+
+        IEnumerator TurnUpGuitar()
+        {
+            while (audioGuitar.volume < 1)
+            {
+                yield return new WaitForSeconds(0.2f);
+                audioGuitar.volume += 0.1f;
+            }
         }
     }
 }

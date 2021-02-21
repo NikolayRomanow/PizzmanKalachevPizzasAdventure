@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3598854457199533999}
   m_Layer: 0
   m_Name: KetchupCut
-  m_TagString: Untagged
+  m_TagString: KetchupCuted
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,4 +134,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945a4bc18306768458b57db210385c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  croppedPrefab: {fileID: 0}
+  croppedPrefabOne: {fileID: 0}
+  croppedPrefabTwo: {fileID: 0}

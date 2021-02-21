@@ -16,6 +16,10 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         private CircleCollider2D _circleCollider2D;
         private GameObject _bladeTrail;
         private GameObject _currentBladeTRail;
+        private KetchupSplashes _ketchupSplashes;
+
+        [SerializeField] private AudioSource audioBladeSweep;
+        [SerializeField] private AudioClip sweepBlade, softBoiled;
 
         private void Awake()
         {
@@ -24,6 +28,7 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
             _circleCollider2D.enabled = false;
             _mainCamera = Camera.main;
             _bladeTrail = Resources.Load<GameObject>("Prefabs/MiniGames/FruitNinja/BladeTrail");
+            _ketchupSplashes = FindObjectOfType<KetchupSplashes>();
         }
 
         private void Update()
@@ -43,6 +48,27 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
                 {
                     _circleCollider2D.enabled = false;
                     Destroy(_currentBladeTRail);
+                }
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.TryGetComponent(out Fruit fruit) && !other.GetComponent<Ketchup>())
+                if (fruit.HasCroppedPrefab)
+                    audioBladeSweep.PlayOneShot(sweepBlade);
+            
+            if (other.TryGetComponent(out Ketchup ketchup))
+            {
+                if (ketchup.gameObject.CompareTag("KetchupCuted"))
+                    return;
+                else
+                {
+                    audioBladeSweep.PlayOneShot(softBoiled);
+                    
+                    if (_ketchupSplashes.CoroutineIsStarted)
+                        _ketchupSplashes.RestartSplashes();
+                    else _ketchupSplashes.TurnOnSplashes();
                 }
             }
         }
