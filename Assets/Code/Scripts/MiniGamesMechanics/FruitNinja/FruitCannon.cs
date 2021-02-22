@@ -66,11 +66,10 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
                     LaunchedObject launchedObject = launchedObjects[Random.Range(0, launchedObjects.Count)];
                     _turnedFruit = Instantiate(fruits.Find(item => item.name == launchedObject.name),
                         transform.position, Quaternion.identity);
-                    if (launchedObject.amount <= 0)
-                        launchedObjects.Remove(launchedObject);
-
                     //StopCannon();
                     launchedObject.amount--;
+                    if (launchedObject.amount <= 0)
+                        launchedObjects.Remove(launchedObject);
                 }
                 
                 else _turnedFruit = Instantiate(fruits[Random.Range(0, fruits.Count)],
