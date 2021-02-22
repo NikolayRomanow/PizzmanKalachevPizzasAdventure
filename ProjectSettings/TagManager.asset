@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ActionButton
   - KetchupCuted
+  - GeneralRoom
   layers:
   - Default
   - TransparentFX
