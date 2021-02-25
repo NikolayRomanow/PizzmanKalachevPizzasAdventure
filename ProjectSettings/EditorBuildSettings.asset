@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FruitNinjaScene.unity
     guid: f6fc747c10deb504fa8fc3e1ccba6aa9
+  - enabled: 1
+    path: Assets/Scenes/CookingScene.unity
+    guid: 11d5e366eaa135b41a46cea2141061f2
   m_configObjects: {}

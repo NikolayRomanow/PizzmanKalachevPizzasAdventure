@@ -42,12 +42,14 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         private void Awake()
         {
             //PlayerPrefs.SetString("LaunchedObjectsToFruitNinja", JsonUtility.ToJson(LaunchedObjectsList));
-            LoadObjects();
+            if (PlayerPrefs.HasKey("LaunchedObjectsToFruitNinja"))
+                LoadObjects();
         }
 
         private void LoadObjects()
         {
-            LaunchedObjectsList launchedObjectsList = JsonUtility.FromJson<LaunchedObjectsList>(PlayerPrefs.GetString("LaunchedObjectsToFruitNinja"));
+            LaunchedObjectsList launchedObjectsList = new LaunchedObjectsList();
+            JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString("LaunchedObjectsToFruitNinja"), launchedObjectsList);
             launchedObjects = launchedObjectsList.launchedObjects;
 
             while (launchedObjects.Count > 0)

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8590900241782862502}
   - component: {fileID: 8590900241782862503}
   m_Layer: 0
-  m_Name: BaconX4
+  m_Name: BaconX2Two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,5 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5585f0d27abacb4c917ea407ae2143d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  croppedPrefab: {fileID: 8590900241782862500, guid: 6a1e918c3b309cd41ad3ec772d385eb6,
+  croppedPrefabOne: {fileID: 8590900241782862500, guid: 6a1e918c3b309cd41ad3ec772d385eb6,
+    type: 3}
+  croppedPrefabTwo: {fileID: 8590900241782862500, guid: 6a1e918c3b309cd41ad3ec772d385eb6,
     type: 3}

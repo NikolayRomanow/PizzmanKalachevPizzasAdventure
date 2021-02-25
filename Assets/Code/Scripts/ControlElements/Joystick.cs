@@ -34,32 +34,41 @@ namespace Code.Scripts.ControlElements
         {
             if (Input.touchCount > 0)
             {
-                if (Vector2.Distance(_originRidgerPosition, Input.GetTouch(0).position) <= 200f && Input.GetTouch(0).phase == TouchPhase.Began)
+                if (Vector2.Distance(Input.GetTouch(0).position, _originPlainPosition) < 800f)
                 {
-                    _touchStart = true;
-                    _firstTouchPosition = Input.GetTouch(0).position;
-                    _secondTouchPosition = Input.GetTouch(0).position;
-                    //plain.position = _firstTouchPosition;
-                    //ridger.position = _firstTouchPosition;
-                    //joystickUI.SetActive(true);
-                }
-                
-                if (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary)
-                {
-                    _secondTouchPosition = Input.GetTouch(0).position;
-                    ridger.position = new Vector3(_originRidgerPosition.x + _touchDirection.x,
-                        _originRidgerPosition.y + _touchDirection.y);
+                    if (Input.GetTouch(0).phase == TouchPhase.Began)
+                    {
+                        _touchStart = true;
+                        _firstTouchPosition = Input.GetTouch(0).position;
+                        _secondTouchPosition = Input.GetTouch(0).position;
+
+                        plain.position = _firstTouchPosition;
+                        ridger.position = _firstTouchPosition;
+                        joystickUI.SetActive(true);
+                    }
+
+                    if (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary)
+                    {
+                        _secondTouchPosition = Input.GetTouch(0).position;
+                        ridger.position = new Vector3(_firstTouchPosition.x + _touchDirection.x,
+                            _firstTouchPosition.y + _touchDirection.y);
+                    }
                 }
 
                 if (Input.GetTouch((0)).phase == TouchPhase.Ended || Input.GetTouch(0).phase == TouchPhase.Canceled)
                 {
-                    _touchStart = false;
-                    _firstTouchPosition = Vector2.zero;
-                    _secondTouchPosition = Vector2.zero;
-                    _touchDirection = Vector2.zero;
-                    plain.position = _originPlainPosition;
-                    ridger.position = _originRidgerPosition;
-                    //joystickUI.SetActive(false);
+                        _touchStart = false;
+                        _firstTouchPosition = Vector2.zero;
+                        _secondTouchPosition = Vector2.zero;
+                        _touchDirection = Vector2.zero;
+                        plain.position = _originPlainPosition;
+                        ridger.position = _originRidgerPosition;
+                        //joystickUI.SetActive(false);
+                }
+
+                else
+                {
+
                 }
             }
         }
@@ -68,7 +77,7 @@ namespace Code.Scripts.ControlElements
         {
             if (_touchStart)
             {
-                _touchOffset = _secondTouchPosition - _originRidgerPosition;
+                _touchOffset = _secondTouchPosition - _firstTouchPosition;
                 _touchDirection = Vector2.ClampMagnitude(_touchOffset, 200f);
             }
         }

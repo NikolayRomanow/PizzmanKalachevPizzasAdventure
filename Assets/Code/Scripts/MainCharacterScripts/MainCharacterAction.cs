@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Action = Code.Scripts.GeneralCore.Action;
@@ -46,6 +47,7 @@ namespace Code.Scripts.MainCharacterScripts
             {
                 GameObject newActionButton = Instantiate(actionButtonPrefab, _canvasTransform);
                 newActionButton.GetComponent<Button>().onClick.AddListener(action.OnAction);
+                newActionButton.GetComponentInChildren<TextMeshProUGUI>().text = action.TextOnButton();
                 actionButtons.Add(newActionButton);
                 actionableObjects.Add(action.gameObject);
                 actionableObjectsOffsets.Add(action.Offset);

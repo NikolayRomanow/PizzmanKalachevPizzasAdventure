@@ -385,9 +385,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 42
-        y: 525
+        y: 526
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,9 +406,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 75
-        y: 526
-        width: 16
-        height: 16
+        y: 528
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +426,10 @@ TextureImporter:
       name: Ingredients_7
       rect:
         serializedVersion: 2
-        x: 108
-        y: 528
-        width: 14
-        height: 14
+        x: 110
+        y: 530
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,7 +452,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -637,9 +637,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 421
-        width: 20
-        height: 25
+        y: 423
+        width: 22
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,10 +657,10 @@ TextureImporter:
       name: Ingredients_18
       rect:
         serializedVersion: 2
-        x: 72
+        x: 78
         y: 423
-        width: 22
-        height: 27
+        width: 11
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -683,7 +683,7 @@ TextureImporter:
         width: 11
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -859,6 +859,27 @@ TextureImporter:
       bones: []
       spriteID: 154d984d5623eb810800000000000000
       internalID: 1782917915424183377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingredients_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 364
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0700aecdb1db3e0800000000000000
+      internalID: -2036440820868943663
       vertices: []
       indices: 
       edges: []
