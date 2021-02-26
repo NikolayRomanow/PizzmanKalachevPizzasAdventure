@@ -46,13 +46,13 @@ namespace Code.Scripts.ControlElements
                         ridger.position = _firstTouchPosition;
                         joystickUI.SetActive(true);
                     }
+                }
 
-                    if (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary)
-                    {
+                if ((Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary) && _touchStart == true)
+                {
                         _secondTouchPosition = Input.GetTouch(0).position;
                         ridger.position = new Vector3(_firstTouchPosition.x + _touchDirection.x,
                             _firstTouchPosition.y + _touchDirection.y);
-                    }
                 }
 
                 if (Input.GetTouch((0)).phase == TouchPhase.Ended || Input.GetTouch(0).phase == TouchPhase.Canceled)
