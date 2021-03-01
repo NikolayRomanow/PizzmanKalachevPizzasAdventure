@@ -9,15 +9,15 @@ namespace Code.Scripts.GeneralCharactersScripts
 
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(Rigidbody2D))]
-    public class CharacterMovement : MonoBehaviour
+    public class CharacterMovement : MonoBehaviour // Класс отвечает за реализацию направления движения персонажа
     {
-        [SerializeField] private float speedMove;
+        [SerializeField] private float speedMove; // В переменной хранится значение скорости персонажа
 
-        private bool _canMove;
-        private Animator _animator;
-        private Rigidbody2D _rigidbody;
-        private Vector2 _movement;
-        private Joystick _joystick;
+        private bool _canMove; // В переменной хранится значение - может ли персонаж ходить
+        private Animator _animator; // В переменной хранится компонент "аниматор" персонажа
+        private Rigidbody2D _rigidbody; // В переменной хранится компонент "Rigidbogy2D" персонажа
+        private Vector2 _movement; // В переменной хранится направление движение персонажа
+        private Joystick _joystick; // В переменной хранится ссылка на джойстик управления, расположенный на экране
 
         private void Awake()
         {
@@ -33,7 +33,7 @@ namespace Code.Scripts.GeneralCharactersScripts
                 Movement();
         }
 
-        private void Movement()
+        private void Movement() // Функция обращается к джойстику и забирает с него значения напрваления движения персонажа и двигает персонажа в эту точку
         {
             _movement = _joystick.Direction;
             _movement /= 200;

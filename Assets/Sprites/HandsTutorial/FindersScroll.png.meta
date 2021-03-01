@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 004ff4edc4b4e6643a87c08840ffe027
+guid: 04bd6b21a7d80d0438aba5837ccef4a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4381940225028554126
-    second: Pizzeria_0
+      213: -1214860444879791109
+    second: FindersScroll_0
   - first:
-      213: -7014761117233728540
-    second: Pizzeria_1
+      213: -5234512365440324609
+    second: FindersScroll_1
   - first:
-      213: 8465717176749941507
-    second: Pizzeria_2
+      213: 5526692905226562093
+    second: FindersScroll_2
   - first:
-      213: 2471453465587336140
-    second: Pizzeria_3
+      213: 8060191613899898668
+    second: FindersScroll_3
   - first:
-      213: -2739332489217200699
-    second: Pizzeria_4
-  - first:
-      213: -4745181540332807376
-    second: Pizzeria_5
+      213: -7423584620039772157
+    second: FindersScroll_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,118 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pizzeria_0
+      name: FindersScroll_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 167
-        width: 296
-        height: 376
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2728d24f4983033c0800000000000000
-      internalID: -4381940225028554126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizzeria_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 67
-        width: 103
-        height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e3bf0ffdef86ae90800000000000000
-      internalID: -7014761117233728540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizzeria_2
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 80
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3036a114be44c7570800000000000000
-      internalID: 8465717176749941507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizzeria_3
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 80
-        width: 144
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc3cd3725dd5c4220800000000000000
-      internalID: 2471453465587336140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizzeria_4
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 463
-        width: 282
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cda58a5d9febf9d0800000000000000
-      internalID: -2739332489217200699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pizzeria_5
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 390
-        width: 21
-        height: 73
+        x: 2
+        y: 32
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +140,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03bd8b5b78ab52eb0800000000000000
-      internalID: -4745181540332807376
+      spriteID: bfb544bacd2f32fe0800000000000000
+      internalID: -1214860444879791109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FindersScroll_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb2a8dbcb64b57b0800000000000000
+      internalID: -5234512365440324609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FindersScroll_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 32
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a63b66ae1c2bc40800000000000000
+      internalID: 5526692905226562093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FindersScroll_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ff510719d8bdf60800000000000000
+      internalID: 8060191613899898668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FindersScroll_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308e972be112af890800000000000000
+      internalID: -7423584620039772157
       vertices: []
       indices: 
       edges: []

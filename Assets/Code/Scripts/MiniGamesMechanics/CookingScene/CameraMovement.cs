@@ -52,20 +52,20 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
                 _touchOffset = Vector2.ClampMagnitude(_secondTouchPosition - _firstTouchPosition, 1000f);
                 _touchDirection = new Vector2(transform.position.x + _touchOffset.x, 0);
 
-                var speed = _touchOffset.x / 10000;
+                var speed = _touchOffset.x / 30000;
                 if (_touchOffset.x < -1)
                 {
-                    if (transform.position.x < 3.6f)
+                    if (transform.position.x < 3.4f)
                     {
                         speed *= -1;
-                        transform.position = Vector2.MoveTowards(transform.position, new Vector2(3.6f, 0), speed);
+                        transform.position = Vector2.Lerp(transform.position, new Vector2(3.4f, 0), speed);
                     }
                 }
                 
                 else if (_touchOffset.x > 1)
                 {
-                    if (transform.position.x > -3.6f)
-                        transform.position = Vector2.MoveTowards(transform.position, new Vector2(-3.6f, 0), speed);
+                    if (transform.position.x > 0f)
+                        transform.position = Vector2.Lerp(transform.position, new Vector2(0f, 0), speed);
                     
                 }
 

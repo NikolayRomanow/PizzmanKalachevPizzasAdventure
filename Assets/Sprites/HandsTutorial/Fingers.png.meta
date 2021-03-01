@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: 5b58f20149c737248a48462d19f53b91
+guid: 01bb380e6442f294d8eb6dc5263f909c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8199821179752616429
-    second: CookingIngridients_0
+      213: 2690518092136612256
+    second: Fingers_0
   - first:
-      213: 3553001826324078691
-    second: CookingIngridients_1
+      213: 2380910157487598644
+    second: Fingers_1
   - first:
-      213: -3179282699736629879
-    second: CookingIngridients_2
+      213: -6576230466531878920
+    second: Fingers_2
   - first:
-      213: 1722024035074542158
-    second: CookingIngridients_3
+      213: -5255465555626051401
+    second: Fingers_3
   - first:
-      213: -9067315134162588678
-    second: CookingIngridients_4
+      213: -5774169760389935046
+    second: Fingers_4
   - first:
-      213: -7452925823055621312
-    second: CookingIngridients_5
+      213: 1444122804555836765
+    second: Fingers_5
   - first:
-      213: 3324135845759447734
-    second: CookingIngridients_6
+      213: -3538448430437678339
+    second: Fingers_6
   - first:
-      213: 2908367186812645667
-    second: CookingIngridients_7
+      213: 4742060322482812683
+    second: Fingers_7
   - first:
-      213: 3252282653909060999
-    second: CookingIngridients_8
+      213: 6559416159471355194
+    second: Fingers_8
+  - first:
+      213: -9202558984214033450
+    second: Fingers_9
+  - first:
+      213: -7665325432462995241
+    second: Fingers_10
+  - first:
+      213: 1499616159629239156
+    second: Fingers_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -138,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CookingIngridients_0
+      name: Fingers_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 109
-        width: 6
-        height: 13
+        x: 2
+        y: 2
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31eee1fd412643e80800000000000000
-      internalID: -8199821179752616429
+      spriteID: 0a1809723f3a65520800000000000000
+      internalID: 2690518092136612256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CookingIngridients_1
+      name: Fingers_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 111
-        width: 11
-        height: 10
+        x: 23
+        y: 2
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3606c50265cce4130800000000000000
-      internalID: 3553001826324078691
+      spriteID: 43cea237c21ba0120800000000000000
+      internalID: 2380910157487598644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CookingIngridients_2
+      name: Fingers_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 110
-        width: 11
-        height: 11
+        x: 44
+        y: 2
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d37a9aa3be0e3d0800000000000000
-      internalID: -3179282699736629879
+      spriteID: 8f71449ab398cb4a0800000000000000
+      internalID: -6576230466531878920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CookingIngridients_3
+      name: Fingers_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 110
-        width: 11
-        height: 11
+        x: 65
+        y: 2
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,41 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4a8d497cbbd5e710800000000000000
-      internalID: 1722024035074542158
+      spriteID: 7b8bb9bfbe5d017b0800000000000000
+      internalID: -5255465555626051401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CookingIngridients_4
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 109
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afb27b91dec6a2280800000000000000
-      internalID: -9067315134162588678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CookingIngridients_5
+      name: Fingers_4
       rect:
         serializedVersion: 2
         x: 86
-        y: 113
-        width: 5
-        height: 5
+        y: 2
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0431f638373e19890800000000000000
-      internalID: -7452925823055621312
+      spriteID: a30d72f12370edfa0800000000000000
+      internalID: -5774169760389935046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CookingIngridients_6
+      name: Fingers_5
       rect:
         serializedVersion: 2
-        x: 100
-        y: 109
-        width: 9
-        height: 12
+        x: 107
+        y: 2
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b272af80f3b12e20800000000000000
-      internalID: 3324135845759447734
+      spriteID: d5d67991a0e8a0410800000000000000
+      internalID: 1444122804555836765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CookingIngridients_7
+      name: Fingers_6
       rect:
         serializedVersion: 2
-        x: 116
-        y: 110
-        width: 10
-        height: 10
+        x: 128
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321be561c889c5820800000000000000
-      internalID: 2908367186812645667
+      spriteID: df249b766e7e4eec0800000000000000
+      internalID: -3538448430437678339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CookingIngridients_8
+      name: Fingers_7
       rect:
         serializedVersion: 2
-        x: 131
-        y: 110
-        width: 11
-        height: 11
+        x: 149
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,8 +308,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78d0a67a7dd622d20800000000000000
-      internalID: 3252282653909060999
+      spriteID: b07ff012dbe2fc140800000000000000
+      internalID: 4742060322482812683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fingers_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a354f376e3ab70b50800000000000000
+      internalID: 6559416159471355194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fingers_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 2
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc7517c51f94080800000000000000
+      internalID: -9202558984214033450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fingers_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0964eb12b4f9590800000000000000
+      internalID: -7665325432462995241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fingers_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 2
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473e22ea3f4bfc410800000000000000
+      internalID: 1499616159629239156
       vertices: []
       indices: 
       edges: []

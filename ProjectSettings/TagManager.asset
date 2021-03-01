@@ -7,6 +7,10 @@ TagManager:
   - ActionButton
   - KetchupCuted
   - GeneralRoom
+  - LightDough
+  - DarkDough
+  - Bowl
+  - DoughOnTable
   layers:
   - Default
   - TransparentFX
