@@ -11,6 +11,7 @@ TagManager:
   - DarkDough
   - Bowl
   - DoughOnTable
+  - KetchupOnTable
   layers:
   - Default
   - TransparentFX

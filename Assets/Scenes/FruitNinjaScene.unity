@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeOnScreen: {fileID: 1631975365}
-  leftSeconds: 120
+  leftSeconds: 60
   cannons:
   - {fileID: 377433703}
   - {fileID: 282338274}

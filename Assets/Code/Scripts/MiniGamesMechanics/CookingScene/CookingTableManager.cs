@@ -17,7 +17,7 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
         private Camera _camera;
         private bool _doughOnTable = false;
         [SerializeField] private DoughOnTableEvent doughOnTableEvent;
-
+        [SerializeField] private Transform bakingSheet;
         public bool DoughOnTable
         {
             get => _doughOnTable;
@@ -26,7 +26,8 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
 
         [SerializeField] private GameObject lightDoughPrefab, darkDoughPrefab;
         [SerializeField] private AudioSource audioSource;
-        [SerializeField] private AudioClip softDough, kickOnBowl;
+        [SerializeField] private AudioClip softDough, kickOnBowl, kickOnEmptyBowl, ketchupSound;
+        private PizzaDough _pizzaDough;
         private void Awake()
         {
             _camera = Camera.main;
@@ -48,8 +49,9 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
                                 if (!_doughOnTable)
                                 {
                                     audioSource.PlayOneShot(softDough);
-                                    Instantiate(lightDoughPrefab);
+                                    Instantiate(lightDoughPrefab, bakingSheet);
                                     _doughOnTable = true;
+                                    _pizzaDough = FindObjectOfType<PizzaDough>();
                                     doughOnTableEvent.Invoke(0);
                                 }
                                 break;
@@ -58,19 +60,31 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
                                 if (!_doughOnTable)
                                 {
                                     audioSource.PlayOneShot(softDough);
-                                    Instantiate(darkDoughPrefab);
+                                    Instantiate(darkDoughPrefab, bakingSheet);
                                     _doughOnTable = true;
+                                    _pizzaDough = FindObjectOfType<PizzaDough>();
                                     doughOnTableEvent.Invoke(0);
                                 }
                                 break;
                             
                             case "Bowl":
-                                if (_doughOnTable)
+                                if (_doughOnTable && hit.collider.GetComponent<BowlWithIngredients>().IngredientsInBowl > 0)
                                 {
-                                    audioSource.PlayOneShot(kickOnBowl);
-                                    hit.collider.GetComponent<BowlWithIngredients>().SetIngredientOnDough();
-                                    doughOnTableEvent.Invoke(2);
+                                    bool trueOrFalse = hit.collider.GetComponent<BowlWithIngredients>().SetIngredientOnDough();
+                                    if (trueOrFalse)
+                                        audioSource.PlayOneShot(kickOnBowl);
+                                    else
+                                    {
+                                        audioSource.PlayOneShot(kickOnEmptyBowl);
+                                    }
+                                    doughOnTableEvent.Invoke(1);
                                 }
+                                break;
+                            
+                            case "KetchupOnTable":
+                                audioSource.PlayOneShot(ketchupSound);
+                                doughOnTableEvent.Invoke(4);
+                                _pizzaDough.SetUpKetchup();
                                 break;
                         }
                     }

@@ -1,43 +1,52 @@
 fileFormatVersion: 2
-guid: 01bb380e6442f294d8eb6dc5263f909c
+guid: 200b544bf8a137944a07f9da5fd94307
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2690518092136612256
-    second: Fingers_0
+      213: 1328013540793959450
+    second: FingerAnimation_0
   - first:
-      213: 2380910157487598644
-    second: Fingers_1
+      213: -736420847857500377
+    second: FingerAnimation_1
   - first:
-      213: -6576230466531878920
-    second: Fingers_2
+      213: -4336882603417697031
+    second: FingerAnimation_2
   - first:
-      213: -5255465555626051401
-    second: Fingers_3
+      213: -8515140430177636523
+    second: FingerAnimation_3
   - first:
-      213: -5774169760389935046
-    second: Fingers_4
+      213: -8001634554512813496
+    second: FingerAnimation_4
   - first:
-      213: 1444122804555836765
-    second: Fingers_5
+      213: 7179470414563211820
+    second: FingerAnimation_5
   - first:
-      213: -3538448430437678339
-    second: Fingers_6
+      213: 1593291553647201901
+    second: FingerAnimation_6
   - first:
-      213: 4742060322482812683
-    second: Fingers_7
+      213: 7857862910358213370
+    second: FingerAnimation_7
   - first:
-      213: 6559416159471355194
-    second: Fingers_8
+      213: 3042427862186198807
+    second: FingerAnimation_8
   - first:
-      213: -9202558984214033450
-    second: Fingers_9
+      213: 5184163182526453684
+    second: FingerAnimation_9
   - first:
-      213: -7665325432462995241
-    second: Fingers_10
+      213: 884885523669433759
+    second: FingerAnimation_10
   - first:
-      213: 1499616159629239156
-    second: Fingers_11
+      213: 8294962525230169840
+    second: FingerAnimation_11
+  - first:
+      213: 8219026619409640821
+    second: FingerAnimation_12
+  - first:
+      213: 6629456519365206882
+    second: FingerAnimation_13
+  - first:
+      213: 2839312393971376394
+    second: FingerAnimation_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,11 +156,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fingers_0
+      name: FingerAnimation_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 2
+        y: 32
         width: 18
         height: 28
       alignment: 0
@@ -161,14 +170,266 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1809723f3a65520800000000000000
-      internalID: 2690518092136612256
+      spriteID: a14ceeb774d0e6210800000000000000
+      internalID: 1328013540793959450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fingers_1
+      name: FingerAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ff24ef325b7c5f0800000000000000
+      internalID: -736420847857500377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f487beff3c40d3c0800000000000000
+      internalID: -4336882603417697031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fe1b6d4e424d980800000000000000
+      internalID: -8515140430177636523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842d5c364cb74f090800000000000000
+      internalID: -8001634554512813496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a7777bd4a92a360800000000000000
+      internalID: 7179470414563211820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e85c6f9328c1610800000000000000
+      internalID: 1593291553647201901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 32
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af25e992facbc0d60800000000000000
+      internalID: 7857862910358213370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 32
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7170c5c6500e83a20800000000000000
+      internalID: 3042427862186198807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 32
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7d52892f8d1f740800000000000000
+      internalID: 5184163182526453684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 32
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9db33902beb74c00800000000000000
+      internalID: 884885523669433759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 32
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe7585d770ad1370800000000000000
+      internalID: 8294962525230169840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d24610a29df0270800000000000000
+      internalID: 8219026619409640821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FingerAnimation_13
       rect:
         serializedVersion: 2
         x: 23
@@ -182,14 +443,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43cea237c21ba0120800000000000000
-      internalID: 2380910157487598644
+      spriteID: 26329aa749f800c50800000000000000
+      internalID: 6629456519365206882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fingers_2
+      name: FingerAnimation_14
       rect:
         serializedVersion: 2
         x: 44
@@ -203,197 +464,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f71449ab398cb4a0800000000000000
-      internalID: -6576230466531878920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_3
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 2
-        width: 18
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b8bb9bfbe5d017b0800000000000000
-      internalID: -5255465555626051401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_4
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 2
-        width: 18
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a30d72f12370edfa0800000000000000
-      internalID: -5774169760389935046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_5
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 2
-        width: 18
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5d67991a0e8a0410800000000000000
-      internalID: 1444122804555836765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_6
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 2
-        width: 18
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df249b766e7e4eec0800000000000000
-      internalID: -3538448430437678339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_7
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 2
-        width: 18
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b07ff012dbe2fc140800000000000000
-      internalID: 4742060322482812683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_8
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 2
-        width: 18
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a354f376e3ab70b50800000000000000
-      internalID: 6559416159471355194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_9
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 2
-        width: 18
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6dbc7517c51f94080800000000000000
-      internalID: -9202558984214033450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_10
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 2
-        width: 18
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d0964eb12b4f9590800000000000000
-      internalID: -7665325432462995241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fingers_11
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 2
-        width: 18
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 473e22ea3f4bfc410800000000000000
-      internalID: 1499616159629239156
+      spriteID: a0127093493476720800000000000000
+      internalID: 2839312393971376394
       vertices: []
       indices: 
       edges: []

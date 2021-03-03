@@ -5,6 +5,7 @@ using Code.Scripts.LanguageSystem;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 namespace Code.Scripts.MiniGamesMechanics.FruitNinja
@@ -87,6 +88,8 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
                 timeOnScreen.text = phraze + _leftTime.ToString(@"mm\:ss");
             }
             StopCannon.Invoke();
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(0);
         }
 
         IEnumerator TurnDownClock()
