@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 namespace Code.Scripts.MiniGamesMechanics.FruitNinja
@@ -17,18 +19,27 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
         private GameObject _bladeTrail;
         private GameObject _currentBladeTRail;
         private KetchupSplashes _ketchupSplashes;
+        private ScoreManager _scoreManager;
+        private string _generalIngredient;
 
         [SerializeField] private AudioSource audioBladeSweep;
         [SerializeField] private AudioClip sweepBlade, softBoiled;
 
         private void Awake()
         {
+            _scoreManager = FindObjectOfType<ScoreManager>();
+            _generalIngredient = _scoreManager.generalIngredient;
             _transform = GetComponent<Transform>();
             _circleCollider2D = GetComponent<CircleCollider2D>();
             _circleCollider2D.enabled = false;
             _mainCamera = Camera.main;
             _bladeTrail = Resources.Load<GameObject>("Prefabs/MiniGames/FruitNinja/BladeTrail");
             _ketchupSplashes = FindObjectOfType<KetchupSplashes>();
+        }
+
+        private void Start()
+        {
+            TimeManager.StopCannon.AddListener(TurnOffBlade);
         }
 
         private void Update()
@@ -52,11 +63,30 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
             }
         }
 
+        private void TurnOffBlade()
+        {
+            GetComponent<CircleCollider2D>().enabled = false;
+        }
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent(out Fruit fruit) && !other.GetComponent<Ketchup>())
                 if (fruit.HasCroppedPrefab)
+                {
                     audioBladeSweep.PlayOneShot(sweepBlade);
+                    int scores = 10;
+                    switch (other.name)
+                    {
+                        case string buffer when buffer.Contains("X2"):
+                            scores = 20;
+                            break;
+                    }
+                    var nameOfIngredient = _generalIngredient;
+                    if (other.name.Contains(nameOfIngredient))
+                        scores *= 2;
+                    Debug.Log(scores);
+                    _scoreManager.AddScore(scores);
+                }
             
             if (other.TryGetComponent(out Ketchup ketchup))
             {
@@ -69,6 +99,8 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
                     if (_ketchupSplashes.CoroutineIsStarted)
                         _ketchupSplashes.RestartSplashes();
                     else _ketchupSplashes.TurnOnSplashes();
+                    
+                    _scoreManager.ClearScore();
                 }
             }
         }

@@ -6,7 +6,6 @@ using Code.Scripts.ControlElements;
 
 namespace Code.Scripts.GeneralCharactersScripts
 {
-
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(Rigidbody2D))]
     public class CharacterMovement : MonoBehaviour // Класс отвечает за реализацию направления движения персонажа

@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 52269d8cbd91f1b429f45119bfe2527d
+guid: 69f2c41d2f3d68f45aea114264dfe214
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3253417820358051466
-    second: CatFULL_0
+      213: 1879816099190708620
+    second: GingerCat_0
   - first:
-      213: 2594630212269291450
-    second: CatFULL_1
+      213: -4590238101067348891
+    second: GingerCat_1
   - first:
-      213: -198160685427424295
-    second: CatFULL_2
+      213: -8200656354094130215
+    second: GingerCat_2
   - first:
-      213: 1972548651784731511
-    second: CatFULL_3
+      213: -946048451681066596
+    second: GingerCat_3
   - first:
-      213: -6465475088637900176
-    second: CatFULL_4
+      213: -9137822345245242308
+    second: GingerCat_4
   - first:
-      213: 1376149300197399470
-    second: CatFULL_5
+      213: -8572548158461336316
+    second: GingerCat_5
   - first:
-      213: 2062714772513100391
-    second: CatFULL_6
+      213: 7313006935274542255
+    second: GingerCat_6
   - first:
-      213: 303449232249136133
-    second: CatFULL_7
+      213: 2120878395795232790
+    second: GingerCat_7
   - first:
-      213: 2881830227364023385
-    second: CatFULL_8
+      213: 3395819554666366815
+    second: GingerCat_8
   - first:
-      213: 2098610141577251068
-    second: CatFULL_9
+      213: 9142438475629900169
+    second: GingerCat_9
   - first:
-      213: -2714515004636572684
-    second: CatFULL_10
+      213: 6366825278732997227
+    second: GingerCat_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +96,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -108,7 +108,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -120,7 +120,7 @@ TextureImporter:
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -132,7 +132,7 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -144,232 +144,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CatFULL_0
+      name: GingerCat_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 6
-        width: 40
-        height: 40
+        x: 1
+        y: 78
+        width: 20
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 679f1afcab989d2d0800000000000000
-      internalID: -3253417820358051466
+      spriteID: c89925358c2761a10800000000000000
+      internalID: 1879816099190708620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_1
+      name: GingerCat_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 6
-        width: 40
-        height: 40
+        x: 24
+        y: 78
+        width: 20
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab7becd5e6af10420800000000000000
-      internalID: 2594630212269291450
+      spriteID: 564ca6764c23c40c0800000000000000
+      internalID: -4590238101067348891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_2
+      name: GingerCat_2
       rect:
         serializedVersion: 2
-        x: 95
-        y: 6
-        width: 40
-        height: 40
+        x: 47
+        y: 78
+        width: 20
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d386a018edff3df0800000000000000
-      internalID: -198160685427424295
+      spriteID: 9db5b21be7a613e80800000000000000
+      internalID: -8200656354094130215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_3
+      name: GingerCat_3
       rect:
         serializedVersion: 2
-        x: 141
-        y: 6
-        width: 40
-        height: 40
+        x: 70
+        y: 78
+        width: 21
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77bfdcb3c86ef5b10800000000000000
-      internalID: 1972548651784731511
+      spriteID: c91ed3112f5fed2f0800000000000000
+      internalID: -946048451681066596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_4
+      name: GingerCat_4
       rect:
         serializedVersion: 2
-        x: 187
-        y: 6
-        width: 40
-        height: 40
+        x: 93
+        y: 78
+        width: 21
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07ac99599a40646a0800000000000000
-      internalID: -6465475088637900176
+      spriteID: c3cc703cdfeef2180800000000000000
+      internalID: -9137822345245242308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_5
+      name: GingerCat_5
       rect:
         serializedVersion: 2
-        x: 233
-        y: 6
-        width: 40
-        height: 40
+        x: 116
+        y: 78
+        width: 21
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eab1b245f70191310800000000000000
-      internalID: 1376149300197399470
+      spriteID: 405abf28ed0380980800000000000000
+      internalID: -8572548158461336316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_6
+      name: GingerCat_6
       rect:
         serializedVersion: 2
-        x: 279
-        y: 6
-        width: 40
-        height: 40
+        x: 139
+        y: 78
+        width: 21
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7621898282c30ac10800000000000000
-      internalID: 2062714772513100391
+      spriteID: fa4d109cf050d7560800000000000000
+      internalID: 7313006935274542255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_7
+      name: GingerCat_7
       rect:
         serializedVersion: 2
-        x: 325
-        y: 6
-        width: 40
-        height: 40
+        x: 162
+        y: 78
+        width: 20
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 504239f0871163400800000000000000
-      internalID: 303449232249136133
+      spriteID: 618dc210aafde6d10800000000000000
+      internalID: 2120878395795232790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_8
+      name: GingerCat_8
       rect:
         serializedVersion: 2
-        x: 371
-        y: 6
-        width: 40
-        height: 40
+        x: 185
+        y: 78
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95c040db2515ef720800000000000000
-      internalID: 2881830227364023385
+      spriteID: f57c635a4ef502f20800000000000000
+      internalID: 3395819554666366815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_9
+      name: GingerCat_9
       rect:
         serializedVersion: 2
-        x: 417
-        y: 6
-        width: 40
-        height: 40
+        x: 208
+        y: 78
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf88eba0ec2cf1d10800000000000000
-      internalID: 2098610141577251068
+      spriteID: 981b8c8da5770ee70800000000000000
+      internalID: 9142438475629900169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatFULL_10
+      name: GingerCat_10
       rect:
         serializedVersion: 2
-        x: 463
-        y: 6
-        width: 40
-        height: 40
+        x: 231
+        y: 78
+        width: 20
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f35b234cfa145ad0800000000000000
-      internalID: -2714515004636572684
+      spriteID: b629bddabd18b5850800000000000000
+      internalID: 6366825278732997227
       vertices: []
       indices: 
       edges: []

@@ -88,7 +88,7 @@ namespace Code.Scripts.MiniGamesMechanics.FruitNinja
                 timeOnScreen.text = phraze + _leftTime.ToString(@"mm\:ss");
             }
             StopCannon.Invoke();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(4f);
             SceneManager.LoadScene(0);
         }
 

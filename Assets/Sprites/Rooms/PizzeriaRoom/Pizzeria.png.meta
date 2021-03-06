@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -4745181540332807376
     second: Pizzeria_5
+  - first:
+      213: 1908861668766995217
+    second: Pizzeria_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,9 +136,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 25
-        y: 167
+        y: 282
         width: 296
-        height: 376
+        height: 261
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +242,10 @@ TextureImporter:
         serializedVersion: 2
         x: 352
         y: 390
-        width: 21
+        width: 28
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,6 +253,27 @@ TextureImporter:
       bones: []
       spriteID: 03bd8b5b78ab52eb0800000000000000
       internalID: -4745181540332807376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizzeria_6
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 330
+        width: 282
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113573cf293ad7a10800000000000000
+      internalID: 1908861668766995217
       vertices: []
       indices: 
       edges: []
