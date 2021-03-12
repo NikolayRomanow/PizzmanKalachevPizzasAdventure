@@ -12,6 +12,7 @@ TagManager:
   - Bowl
   - DoughOnTable
   - KetchupOnTable
+  - Switcher
   layers:
   - Default
   - TransparentFX

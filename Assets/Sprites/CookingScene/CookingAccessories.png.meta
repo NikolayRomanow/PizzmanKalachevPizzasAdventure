@@ -50,6 +50,18 @@ TextureImporter:
   - first:
       213: 471498645181005687
     second: CookingAccessories_15
+  - first:
+      213: -2314609361464928954
+    second: CookingAccessories_16
+  - first:
+      213: -3803558881037401120
+    second: CookingAccessories_17
+  - first:
+      213: 323375355242015103
+    second: CookingAccessories_18
+  - first:
+      213: -5190559471844858985
+    second: CookingAccessories_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -490,6 +502,90 @@ TextureImporter:
       bones: []
       spriteID: 77f771a05891b8600800000000000000
       internalID: 471498645181005687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookingAccessories_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 77
+        width: 74
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645d6109c0bd0efd0800000000000000
+      internalID: -2314609361464928954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookingAccessories_17
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 77
+        width: 74
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3cb7d895b073bc0800000000000000
+      internalID: -3803558881037401120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookingAccessories_18
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 3
+        width: 74
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79e05a1c2cdc7400800000000000000
+      internalID: 323375355242015103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookingAccessories_19
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 3
+        width: 74
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793e52f39ad67f7b0800000000000000
+      internalID: -5190559471844858985
       vertices: []
       indices: 
       edges: []

@@ -369,9 +369,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 959904115236117558, guid: db4f18fe27d00c341ae7edc0693c43f9,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &245920027
 BoxCollider2D:
@@ -691,9 +691,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 3541816792061575541, guid: 4c006016e09fa504f9b86d4930ff9338,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &302722852
 BoxCollider2D:
@@ -796,8 +796,9 @@ GameObject:
   m_Component:
   - component: {fileID: 346772354}
   - component: {fileID: 346772355}
+  - component: {fileID: 346772356}
   m_Layer: 0
-  m_Name: Ketchup
+  m_Name: KetchupRed
   m_TagString: KetchupOnTable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -830,7 +831,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.025506616, y: 0.08747789}
+  m_Offset: {x: -0.052885056, y: 0.0936676}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -841,8 +842,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4169941, y: 0.6355086}
+  m_Size: {x: 0.26021075, y: 0.54059917}
   m_EdgeRadius: 0
+--- !u!114 &346772356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346772353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fda4349d4cf5643970866d9716865b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeOfKetchup: 0
 --- !u!1 &454260094
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +929,77 @@ Transform:
   m_Father: {fileID: 1730012295}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &518127906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 518127907}
+  - component: {fileID: 518127908}
+  - component: {fileID: 518127909}
+  m_Layer: 0
+  m_Name: KetchupWhite
+  m_TagString: KetchupOnTable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &518127907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518127906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.211, y: -0.261, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2044310632}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &518127908
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518127906}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.052885056, y: 0.0936676}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.26021075, y: 0.54059917}
+  m_EdgeRadius: 0
+--- !u!114 &518127909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518127906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fda4349d4cf5643970866d9716865b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeOfKetchup: 3
 --- !u!1 &570663834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,9 +1296,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 1127186692060217911, guid: 834caf25ace269541a4a70083193e3c5,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!212 &712278947
 SpriteRenderer:
@@ -1266,6 +1351,77 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &733481129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733481130}
+  - component: {fileID: 733481131}
+  - component: {fileID: 733481132}
+  m_Layer: 0
+  m_Name: KetchupDarkRed
+  m_TagString: KetchupOnTable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733481130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733481129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5, y: -0.022, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2044310632}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &733481131
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733481129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.052885056, y: 0.0936676}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.26021075, y: 0.54059917}
+  m_EdgeRadius: 0
+--- !u!114 &733481132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733481129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fda4349d4cf5643970866d9716865b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeOfKetchup: 1
 --- !u!1 &841383696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,9 +1620,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 1974231540045473126, guid: 9976a9aaa6c4bf24d888d617f6f70df6,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &872359807
 BoxCollider2D:
@@ -1593,9 +1749,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 9175435214125814457, guid: 2cc79a678b9230e419a719084582ac83,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &941700545
 BoxCollider2D:
@@ -1722,9 +1878,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 5651335364830950564, guid: ac34f735fc516ac45a6ddef4eacfafe2,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &996539422
 BoxCollider2D:
@@ -1881,9 +2037,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 6635602048418941827, guid: a99abeab5560b154aa0d92db5e422b11,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &1262178818
 BoxCollider2D:
@@ -2040,9 +2196,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 5249344044806591613, guid: 70b7a912dbe419049accb5678b2605ef,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &1554640579
 BoxCollider2D:
@@ -2345,7 +2501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730012293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.441, y: -2.737, z: 0}
+  m_LocalPosition: {x: -0.27, y: -2.737, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1539419015}
@@ -2398,6 +2554,77 @@ Transform:
   m_Father: {fileID: 1696754521}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2018357986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018357987}
+  - component: {fileID: 2018357988}
+  - component: {fileID: 2018357989}
+  m_Layer: 0
+  m_Name: KetchupGreen
+  m_TagString: KetchupOnTable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2018357987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018357986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.228, y: -0.802, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2044310632}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2018357988
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018357986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.052885056, y: 0.0936676}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.26021075, y: 0.54059917}
+  m_EdgeRadius: 0
+--- !u!114 &2018357989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018357986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fda4349d4cf5643970866d9716865b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeOfKetchup: 2
 --- !u!1 &2044310630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,6 +2712,9 @@ Transform:
   - {fileID: 454260095}
   - {fileID: 1730012295}
   - {fileID: 346772354}
+  - {fileID: 2018357987}
+  - {fileID: 518127907}
+  - {fileID: 733481130}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2929,9 +3159,9 @@ MonoBehaviour:
   ingredientsInBowl: []
   ingredientPrefab: {fileID: 8574655874547505082, guid: a69c5e91e281b684fbfe4d0b76417ee0,
     type: 3}
-  bowlWithIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
-  bowlWithoutIngredients: {fileID: -8555789256286365375, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
+  bowlWithoutIngredients: {fileID: -638667429218814163, guid: e08a93d0436aeeb48978ff1bc9a50ca7,
     type: 3}
 --- !u!61 &2090517801
 BoxCollider2D:

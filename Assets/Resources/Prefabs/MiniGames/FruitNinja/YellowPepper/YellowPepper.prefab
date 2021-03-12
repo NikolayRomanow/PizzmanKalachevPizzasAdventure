@@ -136,5 +136,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   croppedPrefabOne: {fileID: 8590900241782862500, guid: bd1a51e27520ba14c9be7f9fa935260a,
     type: 3}
-  croppedPrefabTwo: {fileID: 8590900241782862500, guid: 9b5d203b8fe639043a970cac0b61cc6e,
+  croppedPrefabTwo: {fileID: 8590900241782862500, guid: c94f51556adb2814491f52ed34479bb0,
     type: 3}

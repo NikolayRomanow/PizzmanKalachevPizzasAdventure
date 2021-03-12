@@ -8,7 +8,9 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
     {
         [SerializeField] private List<Transform> pointsForPizza;
         [SerializeField] private List<GameObject> ingredientsOnPizza;
-        [SerializeField] private GameObject ketchupOnPizza;
+
+        [SerializeField]
+        private GameObject redKetchupOnPizza, darkRedKetchupOnPizza, greenKetchupOnPizza, whiteKetchupOnPizza;
         private int _currentPointIndex = 0;
 
         public bool SetUpIngredientOnPizza(Transform ingredientTransform)
@@ -23,9 +25,23 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
             return true;
         }
 
-        public void SetUpKetchup()
+        public void SetUpKetchup(TypeOfKetchup typeOfKetchup)
         {
-            ketchupOnPizza.SetActive(true);
+            switch (typeOfKetchup)
+            {
+                case TypeOfKetchup.Red:
+                    redKetchupOnPizza.SetActive(true);
+                    break;
+                case TypeOfKetchup.DarkRed:
+                    darkRedKetchupOnPizza.SetActive(true);
+                    break;
+                case TypeOfKetchup.Green:
+                    greenKetchupOnPizza.SetActive(true);
+                    break;
+                case TypeOfKetchup.White:
+                    whiteKetchupOnPizza.SetActive(true);
+                    break;
+            }
             StartCoroutine(ReturnPizzaNumerator());
         }
 

@@ -12,10 +12,19 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
         
     }
 
+    public enum TypeOfKetchup
+    {
+        Red,
+        DarkRed,
+        Green,
+        White
+    }
+    
     public class CookingTableManager : MonoBehaviour
     {
         private Camera _camera;
         private bool _doughOnTable = false;
+        private bool _ketchupOnDough = false;
         [SerializeField] private DoughOnTableEvent doughOnTableEvent;
         [SerializeField] private Transform bakingSheet;
         public bool DoughOnTable
@@ -50,6 +59,7 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
                                 {
                                     audioSource.PlayOneShot(softDough);
                                     Instantiate(lightDoughPrefab, bakingSheet);
+                                    hit.collider.gameObject.SetActive(false);
                                     _doughOnTable = true;
                                     _pizzaDough = FindObjectOfType<PizzaDough>();
                                     doughOnTableEvent.Invoke(0);
@@ -61,6 +71,7 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
                                 {
                                     audioSource.PlayOneShot(softDough);
                                     Instantiate(darkDoughPrefab, bakingSheet);
+                                    hit.collider.gameObject.SetActive(false);
                                     _doughOnTable = true;
                                     _pizzaDough = FindObjectOfType<PizzaDough>();
                                     doughOnTableEvent.Invoke(0);
@@ -82,9 +93,12 @@ namespace Code.Scripts.MiniGamesMechanics.CookingScene
                                 break;
                             
                             case "KetchupOnTable":
+                                if (!_doughOnTable || _ketchupOnDough)
+                                    break;
                                 audioSource.PlayOneShot(ketchupSound);
                                 doughOnTableEvent.Invoke(4);
-                                _pizzaDough.SetUpKetchup();
+                                _pizzaDough.SetUpKetchup(hit.collider.GetComponent<KetchupOnTable>().typeOfKetchup);
+                                _ketchupOnDough = true;
                                 break;
                         }
                     }
