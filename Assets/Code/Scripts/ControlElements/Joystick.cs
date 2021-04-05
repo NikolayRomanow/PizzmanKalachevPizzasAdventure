@@ -65,11 +65,6 @@ namespace Code.Scripts.ControlElements
                         ridger.position = _originRidgerPosition;
                         //joystickUI.SetActive(false);
                 }
-
-                else
-                {
-
-                }
             }
         }
 
